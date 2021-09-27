@@ -1,9 +1,9 @@
-const mensaje = (mensaje) => document.getElementById("textResultado").value = mensaje;
+const mensaje = (mensaje) => document.getElementById("textoResultado").value = mensaje;
 
 function calcularMultiplicacion(){
-    let primerNumero = parseInt(document.getElementById("numero1").value);  
-    let segundoNumero = parseInt(document.getElementById("numero2").value);
-    let resultado = primerNumero * segundoNumero
+     let primerNumero = parseInt(document.getElementById("numero1").value);  
+     let segundoNumero = parseInt(document.getElementById("numero2").value);
+     let resultado = primerNumero * segundoNumero;
     mensaje(`el resultado de la multiplicacion es: ${resultado}`);
 }
 
@@ -30,4 +30,4 @@ function calcularDivision(){
      }else{
           mensaje(`no se puede dividir por ${segundoNumero}`);
      };
- }
+}
